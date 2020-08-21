@@ -36,4 +36,6 @@ class CassandraSinkForeach() extends ForeachWriter[org.apache.spark.sql.Row] {
   }
 }
 
+//val sink = df2.writeStream.queryName("UserData_with_IP").outputMode("update").foreach(new CassandraSinkForeach()).start()
+//sink.awaitTermination()
 
